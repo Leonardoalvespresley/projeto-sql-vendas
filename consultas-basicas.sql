@@ -39,6 +39,28 @@ FROM clientes
 GROUP BY cidade; 
 
 
+-- Criar a tabela de pedidos
+CREATE TABLE pedidos (
+    id_pedido INT,
+    id_cliente INT,
+    produto VARCHAR(50),
+    valor DECIMAL(10,2)
+    );
+
+-- Inserir pedidos de exemplo
+  INSERT INTO pedidos (id_pedido, id_cliente, produto, valor) VALUES
+  (1, 1, 'Camiseta', 50.00),
+  (2, 1, 'Boné', 30.00),
+  (3, 2, 'Tênis', 80.50),
+  (4, 3, 'Camiseta', 50.00),
+
+
+
+
+
+
+
+
 
 
 
