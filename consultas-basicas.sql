@@ -31,3 +31,14 @@ FROM clientes;
 -- Contar quantos clientes existem
 SELECT COUNT(*) AS total_clientes
 FROM clientes;
+
+
+-- Total vendido por cidade
+SELECT cidade, SUM(valor_compra) AS total_por_cidade
+FROM clientes
+GROUP BY cidade; 
+
+
+
+
+
