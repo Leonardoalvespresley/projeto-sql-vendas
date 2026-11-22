@@ -7,3 +7,10 @@ CREATE TABLE clientes (
   cidade VARCHAR(50),
   valor_compra DECIMAL(10,2)
   );
+
+-- Inserir clientes de exemplo
+INSERT INTO clientes (id, nome, cidade, valor_compra) VALUES
+(1, 'Ana', 'Osasco', 150.00),
+(2, 'Bruno', 'Barueri', 80.50),
+(3, 'Carla', 'Osasco', 230.00);
+
