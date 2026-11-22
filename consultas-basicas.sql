@@ -22,3 +22,12 @@ SELECT * FROM clientes;
 SELECT nome, valor_compra
 FROM clientes
 WHERE cidade = 'Osasco';
+
+
+-- Somar o total vendido
+SELECT SUM(valor_compra) AS total_vendido
+FROM clientes;
+
+-- Contar quantos clientes existem
+SELECT COUNT(*) AS total_clientes
+FROM clientes;
