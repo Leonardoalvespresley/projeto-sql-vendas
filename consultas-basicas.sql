@@ -14,3 +14,11 @@ INSERT INTO clientes (id, nome, cidade, valor_compra) VALUES
 (2, 'Bruno', 'Barueri', 80.50),
 (3, 'Carla', 'Osasco', 230.00);
 
+-- Ver todos os clientes
+SELECT * FROM clientes;
+
+
+-- Ver só nome e valor dos clientes de Osasco
+SELECT nome, valor_compra
+FROM clientes
+WHERE cidade = 'Osasco';
